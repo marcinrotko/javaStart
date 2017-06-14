@@ -1,0 +1,41 @@
+package Coordinates;
+
+public class SetPoint {
+
+    public static void main(String[] args) {
+        Point point = new Point();
+        point.setX(10);
+        point.setY(20);
+       System.out.println("Coordinates point are: (" +point.giveX()+","+point.giveY()+") ");
+        //System.out.println( point.coordinateX );
+    }
+}
+
+
+------------------
+package Coordinates;
+
+
+public class Point {
+    int coordinateX;
+    int coordinateY;
+
+    void setX(int x){
+        coordinateX = x;
+    }
+
+
+    void setY(int y){
+        coordinateY = y;
+    }
+
+
+    int giveX(){
+        return coordinateX;
+    }
+
+    int giveY(){
+        return coordinateY;
+    }
+
+}
